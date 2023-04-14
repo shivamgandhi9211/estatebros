@@ -1,0 +1,150 @@
+/*nav responsiveness*/
+
+@media (max-width:768px) 
+{
+/*  Nav */
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 50px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color:black;
+    height:50px;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+/* footer */
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+
+/* Flex container */
+
+  .flex-container {
+    flex-direction: column;
+
+ }
+}
+
+
+/*End Nav responsive ness*/
+
+
+
+
+
+
+
+/*Home page responsiveness*/
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+  }
+}
+
+
+
+
+/*ENdHome page responsiveness*/
+
+/*contact responsiveness*/
+
+@media screen and (min-width: 600px) {
+  .contact, .email {
+    flex-basis: 48%;
+    margin-right: 4%;
+
+
+  }
+  
+  .email {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .contact, .email{
+    flex-basis: 40%;
+    margin-right: 4%;
+  }
+  
+  .email {
+    margin-right: 0;
+  }
+}
+
+
+
+
+
+
+/* Sell form Responsiveness */
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height:auto;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
+
+
+/*End sell responsiveness*/
